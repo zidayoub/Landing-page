@@ -1,0 +1,222 @@
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container-image {
+  max-height: 50px; /* Limit logo height */
+  margin-right: 20px; /* Space between logo and text */
+
+}
+
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-gap: 0px;
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border: none;
+
+}
+
+/* Add more CSS styles as needed for responsiveness, colors, fonts, etc. */
+/* ... (vos styles CSS existants) */
+
+footer {
+  background-color: #f0ad4e; /* Couleur orange */
+  padding: 5px;
+  width: 500%;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 70px; /* Bords arrondis */
+  margin-top: 10px; /* Marge supérieure */
+  
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Alignement vertical des éléments */
+  align-items: center; /* Centrage horizontal */
+}
+
+.contact-form h4 {
+    margin-bottom: 2px;
+}
+.contact-form input{
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #dddada;
+  border-radius: 50px;
+  box-sizing: border-box; /* Important pour que le padding n'affecte pas la largeur */
+}
+
+.contact-form textarea {
+  height: 150px; /* Hauteur plus importante pour le message */
+  resize: vertical; /* Permettre le redimensionnement vertical */
+}
+
+.contact-form button {
+  background-color: #9c3656; /* Couleur violette */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #800080; /* Violet plus foncé au survol */
+}
+.course-price {
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #9c3656; /* Set the color to a similar purple shade */
+}
+.button {
+  background-color: #9c3656; /* Purple color */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from link */
+  font-weight: bold;
+  float: right;
+  
+}
+.button1{
+  background-color: #9c3656; /* Purple color */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from link */
+  font-weight: bold;
+  
+}
+/* styles.css */
+.header {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  padding: 20px;
+  color: #ccc;
+  background-color: #fff; /* Example background color */
+}
+
+.header-content {
+  display: flex; /* Make content a flex container */
+  align-items: center;
+  margin-right: auto; /* Push content to the left */
+}
+
+.logo {
+  max-height: 50px; /* Limit logo height */
+  margin-right: 20px; /* Space between logo and text */
+}
+
+.header-content h2 {
+  margin-right: 20px; /* Space between text and button */
+}
+
+
+.active{
+  list-style: none;
+    padding: 0 20px;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3 ease;
+    color: #9c3656;
+}
+/* Admin interface container */
+.admin {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for better readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles for adding/editing courses */
+.admin form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin input[type="text"],
+.admin input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.admin button {
+  background-color: #9c3656;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin button:hover {
+  background-color: #800080; /* Darker purple on hover */
+}
+
+/* Course list styles */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for courses */
+  gap: 20px;
+}
+
+.course-item {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-item span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.course-item button {
+  background-color: #f0ad4e; /* Orange for action buttons */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.course-item button:hover {
+  background-color: #e99b35; /* Darker orange on hover */
+}
