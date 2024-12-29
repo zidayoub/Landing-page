@@ -23,8 +23,32 @@ function LandingPage({ courses }) {
           padding: '100px 0',
         }}
       >
-        <h2>Improve your skills on your own to prepare for a better future</h2>
-        <button className="button1">REGISTER NOW</button>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: "white",
+              zIndex: 1,
+              opacity: 0.75,
+              padding: "10px 20px",
+              width: "fit-content",
+              textAlign: "center",
+            }}
+          >
+            <h2 style={{ zIndex: -1 }}>
+              Improve your skills on your own to prepare for a better future
+            </h2>
+
+            <button className="button1" style={{ zIndex: -1, opacity: 1 }}>
+              REGISTER NOW
+            </button>
+          </div>
+        </div>
       </header>
 
       <main>
@@ -41,20 +65,30 @@ function LandingPage({ courses }) {
         </div>
       </main>
 
-      <footer>
-        <div className="contact-form">
-          <h2>Contact Us</h2>
-          <form>
-            <h4>NAME</h4>
-            <input type="text" placeholder="Jiara Martins" />
-            <h4>EMAIL</h4>
-            <input type="email" placeholder="hello@reallygreatsite.com" />
-            <h4>MESSAGE</h4>
-            <input placeholder="Write your message here" />
-            <button type="submit">Send The Message</button>
-          </form>
-        </div>
-      </footer>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+          margin: 0,
+        }}
+      >
+        <footer>
+          <div className="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+              <h4>NAME</h4>
+              <input type="text" placeholder="Jiara Martins" />
+              <h4>EMAIL</h4>
+              <input type="email" placeholder="hello@reallygreatsite.com" />
+              <h4>MESSAGE</h4>
+              <input placeholder="Write your message here" />
+              <button type="submit">Send The Message</button>
+            </form>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
